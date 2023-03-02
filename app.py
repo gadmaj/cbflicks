@@ -13,7 +13,7 @@ password = 'gusd410!'
 
 client.login(username, password)
 user_id = client.user_id_from_username(username)
-
+print('Logged in')
 
 def listDir(dir):
     fileNames = os.listdir(dir)
@@ -85,12 +85,12 @@ def compare_json(file_name):
 
 # if(isthere_a_new_folder()):
 print('--------------------THERE IS A NEW FOLDER FOUND!!!!!! UPLOADING IMAGES TO INSTAGRAM STORY --------------------')
-# listandpostDir(r'H:\My Drive\CB FLICKS\3. LEVIATHAN')
-client.highlight_create(r'3. LEVIATHAN', [story.pk for story in client.user_stories(user_id)])
+listandpostDir(r'H:\My Drive\CB FLICKS\4. RALLY BOYS')
+# client.highlight_create(r'4. RALLY BOYS', [story.pk for story in client.user_stories(user_id)])
 
     
 
-    
+
 save_array_as_json(listDir(r'H:\My Drive\CB FLICKS'), 'pastfolders.json')
 
 print('reset folders')
